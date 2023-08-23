@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Home.css';
-import Table from './Table';
+import UserTable from './Table';
 import Pagination from './Pagination';
 
 const IsCheckEdit = (users) => {
@@ -152,11 +152,11 @@ const Home = () => {
             <h1>Admin Interface</h1>
             <input
                 type="text"
-                placeholder="Search by name, email or role."
+                placeholder="Search by name, email or role"
                 onChange={e => handleSearch(e.target.value)}
             />
 
-            <Table
+            <UserTable
                 users={currentItems}
                 selectedRows={selectedRows}
                 onSelect={handleRowSelect}
