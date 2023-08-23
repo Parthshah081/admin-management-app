@@ -38,8 +38,6 @@ const Home = () => {
     const [filteredUsers, setFilteredUsers] = useState([]);
     const [selectedRows, setSelectedRows] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    const [editing, setEditing] = useState({});
-    const [editData, setEditData] = useState(false);
     // let editMyData;
 
     useEffect(() => {
@@ -119,8 +117,6 @@ const Home = () => {
             setCurrentPage(JSON.parse(localStorage.getItem('currentPage')));
             setUsers(updatedData);
             setFilteredUsers(updatedFilteredData);
-            setEditing({});
-            setEditData(false);
             localStorage.setItem('users', JSON.stringify(updatedData));
             alert("User's information saved successfully.");
         }
@@ -136,8 +132,6 @@ const Home = () => {
             return user;
         })
         setUsers(nothignToEdit);
-        setEditing({});
-        setEditData(false);
     }
 
     const indexOfLastItem = currentPage * ITEMS_PER_PAGE;
