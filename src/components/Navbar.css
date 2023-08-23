@@ -1,0 +1,65 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cornsilk;
+    color: brown;
+    padding: 10px 20px;
+}
+
+.links{
+    list-style: none;
+    gap: 20px;
+    display: none;
+}
+
+.nav-logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-link{
+    cursor: pointer;
+}
+
+.my-menu{
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px){
+    .links{
+        display: flex;
+    }
+}
+
+@media  screen and (max-width: 767px) {
+    .my-menu{
+        display: block;
+    }
+    
+    .links{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        background-color: cornsilk;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid brown;
+        z-index: 1;
+    }
+
+    .show-menu{
+        display: block;
+    }
+
+    .nav-link{
+        padding: 5px;
+    }
+}
+
+    

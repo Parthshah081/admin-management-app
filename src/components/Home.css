@@ -1,0 +1,47 @@
+.admin-ui {
+    max-width: 2000px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-top: 5px;
+    gap: 1rem;
+  }
+  
+  .admin-ui h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .admin-ui input[type="text"] {
+    width: 80%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  .admin-ui button:hover {
+    background-color: #e0e0e0;
+  }
+    
+  .delete-select{
+    background-color: red;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .delete-select:disabled {
+    background-color: lightgray;
+    color: gray;
+    cursor: not-allowed;
+  }
+  
+  @media (max-width:768px){
+    .admin-ui{
+        padding: 1rem;
+    }
+  }

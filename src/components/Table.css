@@ -1,0 +1,55 @@
+.user-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .user-table th,
+  .user-table td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .user-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .select-all-column {
+    width: 40px;
+  }
+  
+ .edit-data{
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+ }
+  
+ .edit-data:hover{
+    color: blue;
+ }
+
+ .delete-data{
+    font-size: 20px;
+    cursor: pointer;
+ }
+ 
+ .delete-data:hover{
+    color: red;
+ }
+
+ .selected-row{
+    background-color: #f0f0f0;
+ }
+
+ .save-data{
+    margin-right: 10px;
+    cursor: pointer;
+ }
+
+ .cancel-data{
+    cursor: pointer;
+ }
+
+ .check-box{
+    cursor: pointer;
+ }
