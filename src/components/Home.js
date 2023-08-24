@@ -11,15 +11,15 @@ const IsCheckEdit = (users) => {
     return IscheckedEdited;
 };
 
-const validateInput = (editObj) => {
-    if (editObj.name !== "" && editObj.email !== "" && editObj.role !== "") {
-        if (editObj.name.length < 5) {
+const validateInput = (userDetails) => {
+    if (userDetails.name !== "" && userDetails.email !== "" && userDetails.role !== "") {
+        if (userDetails.name.length < 5) {
             alert("Name must be at least 5 characters long");
-        } else if (!editObj.email.match(/.+@+.+\.[com|in|org]+$/)) {
+        } else if (!userDetails.email.match(/.+@+.+\.[com|in|org]+$/)) {
             alert("Please enter Valid a email ex.abc@gmail.com");
         } else if (
-            editObj.role.toLowerCase() === "member" ||
-            editObj.role.toLowerCase() === "admin"
+            userDetails.role.toLowerCase() === "member" ||
+            userDetails.role.toLowerCase() === "admin"
         ) {
             return true;
         } else {
