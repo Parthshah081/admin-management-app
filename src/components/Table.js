@@ -3,7 +3,7 @@ import './Table.css';
 import { MdDelete } from 'react-icons/md';
 import { FaEdit } from 'react-icons/fa';
 
-const UserTable = ({ users, selectedRows, onSelect, onSelectAll, onDelete, onSave, onCancel }) => {
+const Table = ({ users, selectedRows, onSelect, onSelectAll, onDelete, onSave, onCancel }) => {
   const [editingId, setEditingId] = useState(null);
   const [editedFields, setEditedFields] = useState({});
 
@@ -111,4 +111,4 @@ const UserTable = ({ users, selectedRows, onSelect, onSelectAll, onDelete, onSav
   );
 };
 
-export default UserTable;
+export default Table;

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Home.css';
-import UserTable from './Table';
+import Table from './Table';
 import Pagination from './Pagination';
 
 const IsCheckEdit = (users) => {
@@ -150,7 +150,7 @@ const Home = () => {
                 onChange={e => handleSearch(e.target.value)}
             />
 
-            <UserTable
+            <Table
                 users={currentItems}
                 selectedRows={selectedRows}
                 onSelect={handleRowSelect}
