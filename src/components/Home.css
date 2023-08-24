@@ -21,9 +21,6 @@
     margin-bottom: 1rem;
   }
   
-  .admin-ui button:hover {
-    background-color: #e0e0e0;
-  }
     
   .delete-select{
     background-color: red;
@@ -32,6 +29,11 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .delete-select:hover{
+     transform: scale(1.1);
   }
 
   .delete-select:disabled {
